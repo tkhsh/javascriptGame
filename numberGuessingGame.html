@@ -5,13 +5,22 @@
    <title>numberGuessingGame</title>
 	<script>
 	var answer = [Math.floor(Math.random() * (9 + 1)), Math.floor(Math.random() * (9 + 1)), Math.floor(Math.random() * (9 + 1)), Math.floor(Math.random() * (9 + 1))];
+	// 0~9までの数を４つ選ぶ処理
 
 	function evaluate(){
 
-	var input = window.inputBox.value;
-	window.inputBox.value = "";
-	window.display.value += input + "\n";
+		var input = window.inputBox.value;
+		window.inputBox.value = "";
+	
+		window.display.value += input + "\n";
 
+	}
+
+	function parseInput(s){
+		var i = parseInt(s);
+	}
+
+	function createAnswer(){
 	}
 	</script>
 </head>
