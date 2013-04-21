@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -8,11 +8,11 @@
 	var answer = [Math.floor(Math.random() * (10)), Math.floor(Math.random() * (10)), Math.floor(Math.random() * (10)), Math.floor(Math.random() * (10))];
 	// 0~9までの数を４つ選ぶ処理
 
-	function evaluate(){
+	function compare(){
 
 		var input = window.inputBox.value;
 		window.inputBox.value = "";
-	
+
 		window.display.value += input + "\n";
 
 	}
@@ -28,7 +28,7 @@
 <body>
 	<form>
 	   <input type="text" id="inputBox" />
-	   <input type="button" value="送信" onclick="evaluate()"/>
+	   <input type="button" value="送信" onclick="compare()"/>
 	   <div>
 		<textarea id="display"></textarea>
 	   </div>
