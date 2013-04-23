@@ -29,7 +29,7 @@
 		var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 		var answer = new Array(4);
 		for(var i = 0; i < 4; i++) {
-			var tmp = numbers.splice(Math.floor(Math.random() * (numbers.length - i)), 1);
+			var tmp = numbers.splice(Math.floor(Math.random() * numbers.length), 1);
 			answer[i] = tmp.toString();
 		}
 		return answer;
