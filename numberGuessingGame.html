@@ -36,17 +36,6 @@
 		return blowcount;
 	}
 
-	function parseInput(){
-		var input = window.inputBox.value;
-		if(input.length != 4) {
-			return input.length + "桁の値が入力されています。4桁の値を入力してください。";
-		} else if(input.match(/[0-9]{3}/) == null) {
-			return "半角の0-9までの値を入力してください";
-		}
-		var parsedInput = input.split(/[0-9]/);
-		return parsedInput;
-	}
-
 	function checkError() {
 		var input = window.inputBox.value;
 		// 桁数が合っているかチェック
