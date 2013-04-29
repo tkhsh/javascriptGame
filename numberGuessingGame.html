@@ -44,13 +44,13 @@
 		}
 		// 半角数字で入力されているかチェック	
 		if(input.match(/[0-9]{4}/) == null) {
-			return "半角の0-9までの値を入力してください\n";
+			return "半角の0-9までの値を入力してください。\n";
 		}
 		// すべての桁に異なる値が入っているかチェック
 		for(int i = 0; i < input.length; i++) {
 			for(int j = i + 1; j < input.length; j++) {
 				if(input.charAt(i) == input.charAt(j)) {
-					return i + "行目と" + j "行目の値が同じです。すべての桁に異なる値を入力してください"
+					return i + "行目と" + j "行目の値が同じです。すべての桁に異なる値を入力してください。\n"
 				}
 			}
 		}
