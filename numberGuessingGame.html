@@ -14,6 +14,16 @@
 
 	}
 
+	function countHit(answer, input) {
+		var hitcount = 0;
+		for(int i = 0; i < answer.length; i++) {
+			if(answer.charAt(i) == input.charAt(i)) {
+				hitcount++;
+			}
+		}
+		return hitcount;
+	}
+
 	function parseInput(){
 		var input = window.inputBox.value;
 		if(input.length != 4) {
