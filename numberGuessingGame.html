@@ -24,16 +24,16 @@
 		return hitCount;
 	}
 
-	function countBlow(answer, input) {
-		var blowcount = 0;
+	function countBlows(answer, input) {
+		var blowCount = 0;
 		for(int i = 0; i < answer.length; i++) {
 			for(int j = 0; j < input.length; j++) {
 				if(answer.charAt(i) == input.charAt(j) && i != j) {
-				blowcount++;
+				blowCount++;
 				}
 			}
 		}
-		return blowcount;
+		return blowCount;
 	}
 
 	function checkError() {
