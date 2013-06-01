@@ -52,7 +52,7 @@
 		for(var i = 0; i < input.length; i++) {
 			for(var j = i + 1; j < input.length; j++) {
 				if(input.charAt(i) == input.charAt(j)) {
-					return i + "行目と" + j + "行目の値が同じです。すべての桁に異なる値を入力してください。\n"
+					return (i+1) + "文字目と" + (j+1) + "文字目の値が同じです。すべての桁に異なる値を入力してください。\n";
 				}
 			}
 		}
