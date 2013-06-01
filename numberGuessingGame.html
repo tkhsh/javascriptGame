@@ -36,9 +36,7 @@
 		return blowCount;
 	}
 
-	function checkError() {
-		var input = window.inputBox.value;
-		
+	function checkError(input) {
 		if(input.length != 4) {
 			return input.length + "桁の値が入力されています。4桁の値を入力してください。\n";
 		}
