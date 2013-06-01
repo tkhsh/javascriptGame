@@ -8,10 +8,14 @@
 	function compare(){
 
 		var input = window.inputBox.value;
-		window.inputBox.value = "";
+		var ans = createAnswer();
+		var display = document.getElementById("display");
 
-		window.display.value += input + "\n";
-
+		if (!checkError(input)) {
+			display.innerHTML = "<p>hits" + countHits(ans, input) + "</p><p>blows" + countBlows(ans, input) + "</p>";
+		} else {
+			display.innerHTML = checkError(input);
+		}
 	}
 
 	function countHits(answer, input) {
