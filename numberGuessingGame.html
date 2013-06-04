@@ -68,7 +68,7 @@
 		var answer = "";
 		for(var i = 0; i < 4; i++) {
 			var tmp = Math.floor(Math.random() * numbers.length)
-			answer = answer.concat(numbers[tmp]);
+			answer += numbers[tmp];
 			numbers.splice(tmp, 1);
 		}
 
